@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://user-management-service-db:5432/${USER_MANAGEMENT_SERVICE_DB_NAME}
+    username: ${USER_MANAGEMENT_SERVICE_DB_USER}
+    password: ${USER_MANAGEMENT_SERVICE_DB_PASSWORD}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery-service:8761/eureka/
+  instance:
+    prefer-ip-address: true
